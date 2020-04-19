@@ -1,0 +1,285 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.brand-logo {
+  width: 100px;
+}
+
+.modal {
+  width: 40% !important;
+  height: 40% !important;
+  overflow: visible !important;
+}
+
+div.heading {
+  text-align: center;
+  font-size: 4vmax;
+  font-family: 'Special Elite', cursive;
+}
+
+div#home {
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("https://i.pinimg.com/originals/d4/7a/7b/d47a7b3584771cfa4a8e68ed1054bc3c.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#home p {
+  color: rgba(164, 2, 170, 0.801);
+  padding: 0;
+  margin: 0 10px 0 0;
+  font-family: 'Faster One', cursive;
+  font-size: 3.5em;
+}
+
+div#aboutus {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(168, 0, 173, 0.801)));
+  background: linear-gradient(to bottom, white, rgba(168, 0, 173, 0.801));
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5vmax;
+}
+
+div#aboutus #aboutPic, div#aboutus #abouText {
+  padding: 1em;
+}
+
+div#aboutus #aboutPic img {
+  width: 40vw;
+}
+
+@media screen and (max-width: 940px) {
+  div#aboutus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  div#aboutus #aboutPic img {
+    width: 100%;
+  }
+}
+
+div#tournament {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(168, 0, 173, 0.801)), to(rgba(174, 0, 180, 0.801)));
+  background: linear-gradient(to bottom, rgba(168, 0, 173, 0.801), rgba(174, 0, 180, 0.801));
+}
+
+@media screen and (min-width: 941px) {
+  div#tournament {
+    height: 100vh;
+  }
+  div#tournament div#comingImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div#tournament div#comingImg img#coming {
+    width: 50%;
+    padding: 0vh 2vw 6vw 6vw;
+  }
+  div#tournament div#comingImg img#soon {
+    width: 50%;
+    padding: 0vh 6vw 6vw 2vw;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  div#tournament {
+    height: 100vh;
+  }
+  div#tournament div#comingImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  div#tournament div#comingImg img#coming {
+    height: 30vh;
+    width: 60%;
+  }
+  div#tournament div#comingImg img#soon {
+    height: 30vh;
+    width: 60%;
+  }
+}
+
+div#teams {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(174, 0, 180, 0.801)), to(rgba(164, 2, 170, 0.801)));
+  background: linear-gradient(to bottom, rgba(174, 0, 180, 0.801), rgba(164, 2, 170, 0.801));
+}
+
+div#teams div#groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div#teams div#groups .card-image img {
+  height: 210px;
+  width: 250px;
+}
+
+@media screen and (min-width: 1200px) {
+  div#teams div#groups .card-image img {
+    height: 250px;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  div#teams {
+    height: 100%;
+  }
+}
+
+div#questions {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(164, 2, 170, 0.801)), to(rgba(94, 3, 97, 0.9)));
+  background: linear-gradient(to bottom, rgba(164, 2, 170, 0.801), rgba(94, 3, 97, 0.9));
+}
+
+div#questions div#questBody {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div#questions div#questBody div.questions {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5vmax;
+  color: antiquewhite;
+}
+
+div#questions div#questBody div.questions span {
+  display: block;
+  margin-left: 1.7em;
+}
+
+div#video {
+  height: 65vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 3, 97, 0.9)), to(rgba(84, 0, 87, 0.925)));
+  background: linear-gradient(to bottom, rgba(94, 3, 97, 0.9), rgba(84, 0, 87, 0.925));
+}
+
+div#video .youtube-video {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+
+div#video .youtube-video iframe, div#video .youtube-video object, div#video .youtube-video embed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  padding: 20px;
+  color: antiquewhite;
+  background: -webkit-gradient(linear, left top, left bottom, from(#300031));
+  background: linear-gradient(to bottom, #300031);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .icons {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 875px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div {
+    padding: 3px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
