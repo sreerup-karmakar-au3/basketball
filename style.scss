@@ -142,8 +142,8 @@ div#teams {
 
         .card-image {
             img {
-                height: 210px;
-                width: 250px;
+                height: 30vmin;
+                width: 35vmin;
             }
         }
     }
@@ -193,11 +193,14 @@ div#questions {
 div#video {
     height: 65vh;
     background: linear-gradient(to bottom, rgba(94, 3, 97, 0.9), rgba(84, 0, 87, 0.925));
+    padding-bottom: 50px;
 
     .youtube-video {
         position: relative;
-        width: 50%;
-        height: 80%;
+        // width: 100%;
+        height: 100%;
+        margin: 0 40vmin 0 40vmin;
+        padding-bottom: 50px;
         overflow: hidden;
     }
         
@@ -205,6 +208,30 @@ div#video {
         position: absolute;
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+    .youtube-video {
+        margin: 0 30vmin 0 30vmin !important;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 684px) {
+    .youtube-video {
+        margin: 0 25vmin 0 25vmin !important;
+    }
+}
+
+@media screen and (max-width: 683px) and (min-width: 620px) {
+    .youtube-video {
+        margin: 0 20vmin 0 20vmin !important;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .youtube-video {
+        margin: 0 15vmin 0 15vmin !important;
     }
 }
 
